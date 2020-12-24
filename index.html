@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mint-form-clone</title>
+  </head>
+  <body>
+    <!--Form with logo on top, it should be centered-->
+    <main>
+      <!--Page/form header-->
+
+      <img src="./intuit_logo.png" width="320px" />
+
+      <!--Form container -->
+      <div class="form-container">
+        <!--Form heading-->
+        <div class="form-heading">
+          <h1>Create an Intuit account</h1>
+          <h2>
+            One account for everything Intuit, including Mint. <br />
+            <a href="/">Learn more</a>
+          </h2>
+        </div>
+        <!--Form-->
+        <form>
+          <span style="display: inline-block">
+            <label for="email" style="display: block">Email address</label>
+            <input type="email" id="email" name="email" required />
+          </span>
+          <span style="display: inline-block">
+            <label for="tel" style="display: block">Phone (recommended)</label>
+            <input
+              type="tel"
+              id="tel"
+              name="tel"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required
+            />
+          </span>
+          <span style="display: inline-block">
+            <label for="password" style="display: block">Password</label>
+            <input
+              type="password"
+              minlength="8"
+              id="password"
+              name="password"
+              required
+            />
+          </span>
+          <span style="display: inline-block">
+            <label for="password" style="display: block"
+              >Confirm password</label
+            >
+            <input
+              type="password"
+              minlength="8"
+              id="password"
+              name="password"
+              required
+            />
+          </span>
+          <span style="display: inline-block"
+            ><button>Create Account</button></span
+          >
+        </form>
+        <div class="terms">
+          <p>
+            By clicking Create Account, you agree to our Terms and have read and
+            acknowledge our
+            <a href="/"
+              >Global Privacy<br />
+              Statement.</a
+            >
+            <br />
+            <strong>Updated on December 3, 2020</strong>
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
